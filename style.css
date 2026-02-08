@@ -113,3 +113,8 @@ nav {
 .likes_count {
     padding-top: 20%;
 }
+
+.section_models {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
