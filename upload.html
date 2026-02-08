@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="user.js"></script>
+        <script src="script_upload.js"></script>
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/qaf8ggv.css">
         <link rel="stylesheet" href="https://use.typekit.net/zep7kmp.css">
@@ -15,6 +15,15 @@
             <button class="nav-button2" onclick="window.location.href='upload.html'">+ Upload a model</button>
         </nav>
         <h3>You now want to upload a model ! That's great !</h3>
-        <p>Unfortunately, this feature is not yet available. We are working on it and it should be available soon !</p>
+        <p>Please fill in the form below in order to upload your model.</p>
+        <form id="UploadForm" class="UploadForm">
+            <p>Model Name :</p>
+            <input type="text" id="ModelName" name="ModelName" required>
+            <p>Model Description :</p>
+            <input type="text" id="ModelDescription" name="ModelDescription" required>
+            <p>Your Name</p>
+            <input type="text" id="UploaderName" name="UploaderName" required>
+            <input type="submit" id="Submit" required>
+        </form>
     </body>
 </html>
